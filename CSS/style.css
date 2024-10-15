@@ -106,7 +106,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    background-color: #e8f5ff;
+    background-color: lightsteelblue; /*#e8f5ff*/
     color: #333;
     margin-bottom: 70px;
     font-family: 'Poppins', sans-serif;
@@ -129,7 +129,7 @@ section {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    background-color: #F675A8;
+    background-color: #F675A8;php loca
     color: #fff;
     border: none;
     padding: 10px 20px;

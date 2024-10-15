@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - PPortfolioApp</title>
+    <title>Home - PortfolioApp</title>
     <link href="./CSS/style.css" rel="stylesheet">
 </head>
 <?php require 'components/nav.view.php' ?>
@@ -18,7 +18,7 @@
     </section>
 
     <!-- tekst about us -->
-    <section class="about-us grid-item">
+    <section class="about-me grid-item">
         <h2>Over Mij</h2>
         <p>
             Ik ben een creatieve softwareontwikkelaar in opleiding, met een passie voor kunst, technologie en
@@ -41,7 +41,6 @@
     </section>
 </main>
 </body>
-
 
 <?php require 'components/footer.view.php'  //footer opvragen ?>
 </html>
