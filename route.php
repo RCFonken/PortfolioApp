@@ -6,4 +6,5 @@ return [
     "/projects" => "controllers/ProjectsController.php",
     "/db" => "db.php",
     "/admin-login" => "controllers/AlController.php",
+    "/admin" => "controllers/AdminController.php"
 ];

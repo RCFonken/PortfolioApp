@@ -1,0 +1,26 @@
+/* styling van de footer*/
+footer {
+    position: absolute; /* was static (losse footer)*/
+    left: 0;
+
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 60px;
+    text-align: center;
+    background-color: #3C096C;
+    color: #fff;
+    float: inline-end;
+}
+
+div a {
+    color:#D9BCFF;
+}
+
+/* styling van de kleur voor de name/e-mail hover */
+div a:hover{
+    background: #fff;
+    color:#000;
+}

@@ -15,7 +15,7 @@
 <?php require 'components/nav.view.php' //nav-bar opvragen?>
 <body>
 <main>
-    <section><h1>projects<h1></section>
+    <section><h1>Admin dashboard<h1></section>
     <section>
 
     </section>

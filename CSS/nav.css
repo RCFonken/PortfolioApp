@@ -1,0 +1,57 @@
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #6237A0;
+    position: fixed;
+    overflow: hidden;
+    height: auto;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    border-radius: 60px;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px 0px #000000;
+    z-index: 1000;
+}
+
+.navbar a {
+    display: block; /* Keep links as blocks */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.navbar a:hover {
+    background: #3C096C;
+    color: #ddd;
+}
+
+.navbar a.active {
+    background-color: #3C096C;
+    color: white;
+}
+
+.disabled-link {
+    pointer-events: none;  /* Disable clicking */
+    color: gray;           /* Change color to indicate it's disabled */
+    cursor: default;        /* Change cursor to default */
+    text-decoration: none;  /* Remove underline */
+}
+
+/* Align items to the right */
+.navbar .right {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Pushes the right items to the end */
+}
+
+.navbar .right a {
+    margin-left: 10px; /* Add some space between the links */
+}
