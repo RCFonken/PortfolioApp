@@ -15,21 +15,23 @@ body {
     margin-top: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
 /* Styling menu*/
 .navbar {
 
-    background-color: #554994;
+    background-color: #6237A0;
     position: fixed;
     overflow: hidden;
     height:auto;
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    border-radius: 60px;
     top: 0;
     left: 0;
-
 
 
     -webkit-box-shadow: 0px 0px 8px 0px #000000;
@@ -56,12 +58,12 @@ body {
 
 
 .navbar a:hover {
-    background: #000000;
+    background: #3C096C;
     color: #ddd;
 }
 
 .navbar a.active {
-    background-color: #F675A8;
+    background-color: #3C096C;
     color: white;
 }
 
@@ -106,19 +108,21 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    background-color: lightsteelblue; /*#e8f5ff*/
+    background-color: #9f9f9f; /*#e8f5ff*/
     color: #333;
-    margin-bottom: 70px;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 /* Styling sections */
 section {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
+    background-color: #FCFAFF;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 40px;
     text-align: center;
 }
 
@@ -129,8 +133,8 @@ section {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    background-color: #F675A8;php loca
-    color: #fff;
+    background-color: #D9BCFF;
+    color: #000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -138,7 +142,8 @@ section {
 }
 
 .my-button-class:hover {
-    background-color: #554994;
+    background-color: #3C096C;
+    color: #ffffff;
 }
 
 
@@ -173,21 +178,29 @@ section {
 footer {
     position: absolute; /* was static (losse footer)*/
     left: 0;
-    bottom: 0;
-    width: 100%;
+
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 60px;
     text-align: center;
-    background-color: #1e1e1e;
+    background-color: #3C096C;
     color: #fff;
-    padding: 2px;
     float: inline-end;
-    margin-top: 50px;
+
 
 
 
 }
 
+div a {
+    color:#D9BCFF;
+}
+
 /* styling van de kleur voor de name/e-mail hover */
 div a:hover{
-    background: #fb0165;
-    color:#fff;
+    background: #fff;
+    color:#000;
 }

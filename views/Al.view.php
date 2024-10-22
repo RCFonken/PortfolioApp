@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 <?php require 'components/nav.view.php' ?>
 <body>
 <main>
-    <p><b>contact</b></p>
+
 </main>
 </body>
 

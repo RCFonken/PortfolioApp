@@ -3,6 +3,7 @@
 return [
     "/" => "controllers/HomeController.php",
     "/about" => "controllers/AboutController.php",
-    "/contact" => "controllers/ContactController.php",
     "/projects" => "controllers/ProjectsController.php",
+    "/db" => "db.php",
+    "/admin-login" => "controllers/AlController.php",
 ];

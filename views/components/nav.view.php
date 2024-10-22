@@ -6,7 +6,7 @@
            <a href="/">Home</a>
            <a href="/about">About</a>
            <a href="/projects">Projects</a>
-           <a href="/contact">Contact</a>
+           <a href="/admin-login">Admin Login</a>
    </div>
 
 

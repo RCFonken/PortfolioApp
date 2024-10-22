@@ -3,8 +3,8 @@
 // die(var_dump(phpinfo()));
 
 // sessie opstarten
-//$app = require "private.php";
-//$database = $app["database"];
+$app = require "private.php";
+$database = $app["database"];
 $route = require "route.php";
 
 session_start();
