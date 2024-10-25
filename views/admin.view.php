@@ -1,27 +1,39 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - PPortfolioApp</title>
-    <link href="./CSS/nav.css" rel="stylesheet"> <!--roept mijn nav-bar styling aan-->
-    <link href="./CSS/body.css" rel="stylesheet"> <!--roept mijn body styling aan-->
-    <link href="./CSS/section.css" rel="stylesheet"> <!--roept mijn section styling aan-->
-    <link href="./CSS/forms.css" rel="stylesheet"> <!--roept mijn form styling aan-->
-    <link href="./CSS/buttons.css" rel="stylesheet"> <!--roept mijn button styling aan-->
-    <link href="./CSS/footer.css" rel="stylesheet"> <!--roept mijn footer styling aan-->
-</head>
-<?php require 'components/nav.view.php' //nav-bar opvragen?>
-<body>
+<!-- html opening, header, nav and body opening tag in /components/nav.view.php -->
+<?php require __DIR__ . '/components/nav.view.php'; // nav-bar opvragen ?>
+
 <main>
-    <section><h1>Admin dashboard<h1></section>
-    <section>
-
-    </section>
+    <section><h1>Admin dashboard</h1></section>
 </main>
-</body>
+<under class="side-by-side">
+    <section class="alt">
+        <h1>Add project</h1>
+    </section>
 
+    <section class="alt">
+        <h1>Manage Projects</h1>
+    </section>
 
-<?php require 'components/footer.view.php'  //footer opvragen ?>
-</html>
+    <section class="alt">
+        <h1>Edit About Me</h1>
+        <form action="/Services/edit_about.php" method="post">
+            <!-- Bio Textarea -->
+            <label for="bio">Bio:</label>
+            <textarea class="styled-text-imput" id="bio" name="bio" rows="5" cols="50" placeholder="Add or update your bio"><?php echo htmlspecialchars($current_bio ?? ''); ?></textarea>
+
+            <!-- CV Link -->
+            <label for="cv_link">CV Link:</label><br>
+            <input class="styled-text-imput" type="url" id="cv_link" name="cv_link" placeholder="Add or update your CV" value="<?php echo htmlspecialchars($current_cv_link ?? ''); ?>">
+            <br>
+            <!-- Submit button -->
+            <button type="submit" class="my-button-class">Save Changes</button>
+        </form>
+    </section>
+    <section class="alt">
+        <h1>Edit Skills</h1>
+    </section>
+    <section class="alt-1">
+        <h1>Edit Qualifications</h1>
+    </section>
+</under>
+<!-- body end-tag, footer and html closing tag in /components/footer.view.php -->
+<?php require __DIR__ . '/components/footer.view.php'; // footer opvragen ?>

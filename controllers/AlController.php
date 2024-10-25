@@ -1,2 +1,2 @@
 <?php
-require "views/Al.view.php";
+require __DIR__ . "../../views/Al.view.php";

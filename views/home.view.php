@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - PortfolioApp</title>
-    <link href="./CSS/nav.css" rel="stylesheet"> <!--roept mijn nav-bar styling aan-->
-    <link href="./CSS/body.css" rel="stylesheet"> <!--roept mijn body styling aan-->
-    <link href="./CSS/section.css" rel="stylesheet"> <!--roept mijn section styling aan-->
-    <link href="./CSS/forms.css" rel="stylesheet"> <!--roept mijn form styling aan-->
-    <link href="./CSS/buttons.css" rel="stylesheet"> <!--roept mijn button styling aan-->
-    <link href="./CSS/footer.css" rel="stylesheet"> <!--roept mijn footer styling aan-->
-</head>
-<?php require 'components/nav.view.php' ?>
-<body>
+<!--html opening, header, nav and body opening tag in /components/nav.view.php-->
+<?php require __DIR__ . '/components/nav.view.php' ?>
 <main class="grid-container">
     <section class="banner grid-item">
-            <h2> Welkom in mijn digitale wereld</h2>
-            <h4>Ik ben Renee Fonken, een softwareontwikkelaar in opleiding met een passie voor creativiteit en technologie. <br>
-                Op deze website deel ik mijn projecten, vaardigheden en meer over wie ik ben. Ontdek mijn reis als developer
-                en laat je inspireren door mijn werk</h4>
+        <h2> Welkom in mijn digitale wereld</h2>
+        <h4>Ik ben Renee Fonken, een softwareontwikkelaar in opleiding met een passie voor creativiteit en technologie.
+            <br>
+            Op deze website deel ik mijn projecten, vaardigheden en meer over wie ik ben. Ontdek mijn reis als developer
+            en laat je inspireren door mijn werk</h4>
     </section>
 
     <!-- tekst about us -->
@@ -41,11 +28,10 @@
             wat ik tot nu toe heb gebouwd!
         </p>
         <button class="my-button-class" onclick="window.location.href='/projects'">Bekijk mijn projecten</button>
-<!--Ik had meerdere button manieren geprobeert, toch lukte het me heel de tijd niet om de button smooth naar de projecten
-        pagina te navigeren, toch is dit na veel dingen gelezen te hebben me gelukt met een stukje javascript.-->
+        <!--Ik had meerdere button manieren geprobeert, toch lukte het me heel de tijd niet om de button smooth naar de projecten
+                pagina te navigeren, toch is dit na veel dingen gelezen te hebben me gelukt met een stukje javascript.-->
     </section>
 </main>
-</body>
+<!--body end-tag, footer and html closing tag in /components/footer.view.php-->
+<?php require __DIR__ . '/components/footer.view.php'  //footer opvragen ?>
 
-<?php require 'components/footer.view.php'  //footer opvragen ?>
-</html>

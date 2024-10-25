@@ -1,6 +1,7 @@
 /* styling van de footer*/
 footer {
-    position: absolute; /* was static (losse footer)*/
+    position: fixed; /* was static (losse footer)*/
+    bottom: 0;
     left: 0;
 
     width: 96%;
