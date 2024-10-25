@@ -4,7 +4,7 @@ return [
     "/" => "controllers/HomeController.php",
     "/about" => "controllers/AboutController.php",
     "/projects" => "controllers/ProjectsController.php",
-    "/db" => "db.php",
     "/admin-login" => "controllers/AlController.php",
-    "/admin" => "controllers/AdminController.php"
+    "/admin" => "controllers/AdminController.php",
+    "/404" => "controllers/404Controller.php",
 ];
