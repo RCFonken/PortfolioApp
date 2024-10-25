@@ -18,21 +18,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    die("Access denied. Please log in.");
-}
-
-$user_id = $_SESSION['user_id']; // Get the logged-in user's ID
-
 // Initialize variables to avoid undefined variable warnings
 $bio = ''; // Ensure this is defined
 $cv_link = ''; // Optional: If you want to use it later
 
 // Fetch current bio and CV link
-$sql = "SELECT bio, cv_link FROM about_me WHERE user_id = ?";
+// Assuming you want to display the first record in the about_me table
+$sql = "SELECT bio, cv_link FROM about_me LIMIT 1"; // Fetch the first entry
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
 
