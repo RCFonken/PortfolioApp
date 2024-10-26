@@ -11,6 +11,13 @@ body {
     margin: 0;
 }
 
+img {
+    display: block; /* Ensures it behaves like a block element */
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintains aspect ratio */
+}
+
 /* Styling buttons */
 .my-button-class {
     text-align: center;
@@ -59,6 +66,26 @@ section {
     text-align: center;
 }
 
+.project-display{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+.project{
+    width: 29%;
+    background-color: #D9BCFF;
+    object-fit: contain;
+}
+
+img {
+    width: 100%;      /* Make the image take up the full width of the container */
+    height: max;    /* Fixed height */
+    object-fit: cover; /* Scale the image to cover the container */
+}
+
 .side-by-side{
     display: flex;
     flex-direction: row;
@@ -88,4 +115,17 @@ section {
     border-radius: 40px;
     text-align: center;
 }
+
+.small-text{
+    font-size: 0.7em;
+}
+
+.description{
+    white-space: pre-line; /* Preserves line breaks */
+    max-height: 300px; /* Set your desired max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Options: auto, thin */
+    scrollbar-color: #f1f1f1 #D9BCFF; /* Handle color and track color */
+}
+
 
