@@ -38,6 +38,26 @@ img {
     color: #ffffff;
 }
 
+/* Styling buttons alt */
+.my-button-class-alt {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: #3C096C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-button-class-alt:hover {
+    background-color: #D9BCFF;
+    color: #000;
+}
+
 .styled-text-imput {
     font-family: 'Poppins', sans-serif;
     padding: 10px;
@@ -95,6 +115,7 @@ img {
 }
 
 .alt {
+    height: 560px;
     width: 100%;
     margin-left: 0%;
     margin-right: 2%;
@@ -103,6 +124,9 @@ img {
     padding: 20px;
     border-radius: 40px;
     text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Options: auto, thin */
+    scrollbar-color: #D9BCFF #f1f1f1; /* Handle color and track color */
 }
 
 .alt-1 {

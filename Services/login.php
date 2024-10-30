@@ -1,6 +1,5 @@
 <?php
-// Start session
-session_start();
+session_start(); // Start session
 
 // Include your database configuration
 $app = require __DIR__ . "../../Configuration/private.php";
@@ -12,7 +11,6 @@ $username = $database['username'];
 $password = $database['password'];
 $dbname = $database['dbname'];
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
@@ -35,16 +33,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Use password_verify to check password against hashed value in the database
+        // Verify password
         if (password_verify($password, $row['password'])) {
             // Store user information in session
             $_SESSION['loggedin'] = true;
             $_SESSION['user_id'] = $row['user_id'];
             $_SESSION['username'] = $row['username'];
-            $_SESSION['is_admin'] = $row['is_admin']; // Store admin status, if necessary
+            $_SESSION['is_admin'] = $row['is_admin'];
 
             // Redirect to the admin dashboard
-            header("Location: /admin");
+            header("Location: /admin"); // Adjust this path if needed
             exit;
         } else {
             echo "Invalid password.";
@@ -57,6 +55,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $conn->close();
-
-
 ?>
